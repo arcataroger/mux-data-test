@@ -27,6 +27,11 @@ function App() {
           debug={true} // (Optional) Shows analytics events in the browser console
           data={videoData.data.upload.video} // Mock of DatoCMS CDA query response.
       />
+        <h3>Notes:</h3>
+        <ul>
+            <li>Tracking prevention may block these events from being sent (uBlock Origin, privacy addons, Firefox Tracking Protection, etc.)</li>
+            <li>When `debug=true`, you can open the browser console to see the events it tries to send (but they may still be blocked)</li>
+        </ul>
     </>
   );
 }
